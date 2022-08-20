@@ -1,0 +1,12 @@
+{
+    "name": "Company Nike",
+    "descripcion": "Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "address": "New York, NY 10012, CL",
+    "mail": "correo@falso.com",
+    "phone": [
+        "+569 3301 2101",
+        "+562 2233 5641"
+    ],
+    "linkCopyright": "https://mdbootstrap.com/",
+    "nameCopyright": "MDBootstrap.com"
+}
