@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from "react";
 import { Button } from "react-bootstrap";
 interface props {
   children: ReactNode;
-  style: {};
+  style?: {};
 }
 const ButtonMain: FC<props> = ({ children, style }) => {
   return (
