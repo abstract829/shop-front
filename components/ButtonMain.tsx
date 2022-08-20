@@ -2,11 +2,12 @@ import React, { FC, ReactNode } from "react";
 import { Button } from "react-bootstrap";
 interface props {
   children: ReactNode;
-  style: {};
+  style?: {};
+  onClick?: (arg: any) => void;
 }
-const ButtonMain: FC<props> = ({ children, style }) => {
+const ButtonMain: FC<props> = ({ children, style, onClick }) => {
   return (
-    <Button variant="dark" style={style}>
+    <Button variant="dark" style={style} onClick={onClick}>
       {children}
     </Button>
   );

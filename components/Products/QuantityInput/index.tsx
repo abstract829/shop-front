@@ -1,11 +1,19 @@
-import React, { Dispatch, FC, SetStateAction } from "react";
+import React, { Dispatch, FC, SetStateAction, useEffect } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 interface props {
   value: number;
-  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  afterChange?: (...args: any) => void;
   setValue: Dispatch<SetStateAction<number>>;
 }
-const QuantityInput: FC<props> = ({ value, handleChange, setValue }) => {
+const QuantityInput: FC<props> = ({
+  value,
+  setValue,
+  afterChange = () => null,
+}) => {
+  useEffect(() => {
+    afterChange();
+  }, [value]);
+
   const plus = () => {
     setValue((prev: number) => prev + 1);
   };
@@ -33,7 +41,7 @@ const QuantityInput: FC<props> = ({ value, handleChange, setValue }) => {
       <input
         type="number"
         value={value}
-        onChange={handleChange}
+        disabled={true}
         style={{
           width: "3em",
           textAlign: "center",

@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useMediaQuery } from "react-responsive";
 import Redes from "../Redes";
 
@@ -40,9 +41,11 @@ const NavbarComponent: FC = () => {
             <Nav.Link href="#pricing">Propiedades</Nav.Link>
             <Nav.Link href="#pricing">Contacto</Nav.Link>
             <Nav.Link href="#pricing">Blog</Nav.Link>
+            <Nav.Link href="/carro">
+              <AiOutlineShoppingCart style={{ fontSize: 30 }} />
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        {!isTabletOrMobile && <Redes className="redes-navbar" />}
       </Container>
     </Navbar>
   );
