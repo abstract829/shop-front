@@ -1,7 +1,26 @@
 [
   {
-    "name": "Zapatos nike",
-    "price": 3000,
+    "id": "1",
+    "name": "Zapatos nike 1",
+    "price": 30000,
     "image": "/imgs/zapatos.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Zapatos nike 2",
+    "price": 40000,
+    "image": "/imgs/zapatos2.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Zapatos nike 3",
+    "price": 50000,
+    "image": "/imgs/zapatos3.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Zapatos nike 4",
+    "price": 60000,
+    "image": "/imgs/zapatos4.jpg"
   }
 ]

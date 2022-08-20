@@ -6,7 +6,6 @@ interface props {
 }
 const ToastComponent: FC<props> = ({ type, text }) => {
   const [show, setShow] = useState(true);
-
   return (
     <ToastContainer className="p-3" position="top-end">
       <Toast

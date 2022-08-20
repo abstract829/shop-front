@@ -15,11 +15,7 @@ const ProductList = () => {
             xl={3}
             className="d-flex justify-content-center"
           >
-            <ProductCard
-              image={product.name}
-              name={product.name}
-              price={product.price}
-            />
+            <ProductCard product={product} />
           </Col>
         ))}
       </Row>
